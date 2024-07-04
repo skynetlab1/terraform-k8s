@@ -1,7 +1,7 @@
 # Copyright (c) HashiCorp, Inc.
 # SPDX-License-Identifier: MPL-2.0
 
-FROM golang
+FROM golang:1.22.5
 
 RUN mkdir -p $GOPATH/src/github.com/nxadm/tail/
 ADD . $GOPATH/src/github.com/nxadm/tail/
